@@ -1,0 +1,89 @@
+%==============================================================================
+% Case research techniques: Database-performance
+%==============================================================================
+% Based on LaTeX-sjabloon ‘Stylish Article’ (cfr articletin.cls)
+% Author: Jens Buysse, Bert Van Vreckem
+
+% How to compile this document:
+% 1) latexmk -pdf db-performance
+% 2) biber db-performance
+% 3) latexmk -pdf db-performance
+
+\documentclass[fleqn,10pt]{articletin}
+
+%------------------------------------------------------------------------------
+% Metadata
+%------------------------------------------------------------------------------
+
+\JournalInfo{HoGent Business and Information Management} % Journal information
+\Archive{Research 2016 - 2017} % Additional notes (e.g. copyright, DOI, review/research article)
+
+%---------- Title, author- ----------------------------------------------------
+
+\PaperTitle{Performantie comparison between database systems}
+\PaperType{Case research process} % Type document
+
+\Authors{First name Name\textsuperscript{1}, First name Name\textsuperscript{2}, First name Name\textsuperscript{3}, First name Name\textsuperscript{4}} % Authors
+\affiliation{\textbf{Contact:}
+  \textsuperscript{1} \href{mailto:firstname.name@student.hogent.be}{firstname.name@student.hogent.be};
+  \textsuperscript{2} \href{mailto:firstname.name@student.hogent.be}{firstname.name@student.hogent.be};
+  \textsuperscript{3} \href{mailto:firstname.name@student.hogent.be}{firstname.name@student.hogent.be};
+  \textsuperscript{4} \href{mailto:firstname.name@student.hogent.be}{firstname.name@student.hogent.be}}
+
+%---------- Abstract ----------------------------------------------------------
+
+  \Abstract{ This is where the summary of the paper goes, as a continuous text of one paragraph. This is actually the last thing to write, when the rest of the content is finished. The abstract should consist of the following elements: the \textbf{context} (why is this research important?), the \textbf{need} (why did it have to be researched?),the \textbf{task} (what exactly was done that is being reported on in this paper?), the \textbf{object} (what is written in this document?), the \textbf{result}, the most imporant \textbf{conclusion} and the \textbf{perspective} (what research could be conducted following this one?).  }
+
+
+%---------- Research domain, keywords -----------------------------------------
+
+\newcommand{\keywordname}{Keywords} % Defines the keywords heading name
+\Keywords{Database-management --- Relational databases --- performance} % Keywords
+
+%---------- Title, contents ---------------------------------------------------
+\begin{document}
+
+%\flushbottom % Makes all text pages the same height
+\maketitle % Print the title and abstract box
+\tableofcontents % Print the contents section
+\thispagestyle{empty} % Removes page numbering from the first page
+
+%------------------------------------------------------------------------------
+% Body
+%------------------------------------------------------------------------------
+
+% The section division below is a suggestion that can be adjusted when
+% necessary (e.g. split up experiments and analysis of results).
+
+\section{Introduction} % The \section*{} command stops section numbering
+\label{sec:introduction}
+
+Describe the context of the conducted research, which also comprises the literature review, the need and task (see abstract). This section should have a lot of citations, at least to~\textcite{Bassil2012}.
+
+A typical last sentence for an introduction is ``The rest of this article is structured as follows: Section~\ref{sec:methodology} describes the methodology that was followed, Section [\ldots]''
+
+\section{Methodology}
+\label{sec:methodology}
+
+Describe in as much detail as possible how the experiment was designed. The reader should be able to reproduce your experiment independently using the description given.
+
+\section{Experiments}
+\label{sec:experiments}
+
+Describe how the experiments went, and the most important results. Add graphs and tables that summarise/visualise the data.
+
+Also describe the results of the hypothesis test: are the differences in performance significant?
+
+\section{Conclusion}
+\label{sec:conclusie}
+
+Write down the conclusion(s) and any research questions that came up and that could be explored in future work.
+
+%------------------------------------------------------------------------------
+% Bibliography
+%------------------------------------------------------------------------------
+
+\phantomsection
+\printbibliography[heading=bibintoc]
+
+\end{document}
