@@ -20,7 +20,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{artikeltin}
+\ProvidesClass{articletin}
 \RequirePackage{ifthen}
 \RequirePackage{calc}
 \AtEndOfClass{\RequirePackage{microtype}}
